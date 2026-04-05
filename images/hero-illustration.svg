@@ -1,0 +1,204 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" fill="none">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:0.08"/>
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:0.08"/>
+    </linearGradient>
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c3aed"/>
+      <stop offset="100%" style="stop-color:#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="green-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#22c55e"/>
+      <stop offset="100%" style="stop-color:#16a34a"/>
+    </linearGradient>
+    <linearGradient id="orange-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b"/>
+      <stop offset="100%" style="stop-color:#d97706"/>
+    </linearGradient>
+    <filter id="shadow1" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#2563eb" flood-opacity="0.15"/>
+    </filter>
+    <filter id="shadow2" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Background Circle -->
+  <circle cx="250" cy="250" r="220" fill="url(#bg-grad)"/>
+  <circle cx="250" cy="250" r="180" fill="none" stroke="#2563eb" stroke-opacity="0.06" stroke-width="1" stroke-dasharray="8 6"/>
+
+  <!-- Floating Dots -->
+  <circle cx="80" cy="120" r="5" fill="#2563eb" opacity="0.2">
+    <animate attributeName="cy" values="120;110;120" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="420" cy="100" r="4" fill="#7c3aed" opacity="0.25">
+    <animate attributeName="cy" values="100;90;100" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="440" cy="380" r="6" fill="#22c55e" opacity="0.2">
+    <animate attributeName="cy" values="380;370;380" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="60" cy="350" r="3" fill="#f59e0b" opacity="0.3">
+    <animate attributeName="cy" values="350;342;350" dur="2.8s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Main Monitor -->
+  <g filter="url(#shadow2)">
+    <rect x="115" y="90" width="270" height="180" rx="12" fill="white"/>
+    <rect x="115" y="90" width="270" height="32" rx="12" fill="url(#card-grad)"/>
+    <rect x="115" y="110" width="270" height="12" fill="url(#card-grad)"/>
+    <!-- Window dots -->
+    <circle cx="132" cy="106" r="4" fill="#ef4444" opacity="0.9"/>
+    <circle cx="146" cy="106" r="4" fill="#f59e0b" opacity="0.9"/>
+    <circle cx="160" cy="106" r="4" fill="#22c55e" opacity="0.9"/>
+    <!-- Monitor Stand -->
+    <rect x="225" y="270" width="50" height="20" rx="2" fill="#e2e8f0"/>
+    <rect x="210" y="286" width="80" height="6" rx="3" fill="#cbd5e1"/>
+  </g>
+
+  <!-- Code Lines on Monitor -->
+  <rect x="132" y="135" width="60" height="6" rx="3" fill="#7c3aed" opacity="0.7"/>
+  <rect x="200" y="135" width="40" height="6" rx="3" fill="#2563eb" opacity="0.5"/>
+  <rect x="145" y="150" width="80" height="6" rx="3" fill="#94a3b8" opacity="0.4"/>
+  <rect x="235" y="150" width="30" height="6" rx="3" fill="#22c55e" opacity="0.5"/>
+  <rect x="145" y="165" width="50" height="6" rx="3" fill="#f59e0b" opacity="0.5"/>
+  <rect x="205" y="165" width="70" height="6" rx="3" fill="#94a3b8" opacity="0.3"/>
+  <rect x="132" y="180" width="90" height="6" rx="3" fill="#2563eb" opacity="0.4"/>
+  <rect x="145" y="195" width="60" height="6" rx="3" fill="#7c3aed" opacity="0.4"/>
+  <rect x="215" y="195" width="45" height="6" rx="3" fill="#94a3b8" opacity="0.3"/>
+  <rect x="145" y="210" width="40" height="6" rx="3" fill="#22c55e" opacity="0.5"/>
+  <rect x="132" y="225" width="70" height="6" rx="3" fill="#94a3b8" opacity="0.3"/>
+  <rect x="210" y="225" width="55" height="6" rx="3" fill="#2563eb" opacity="0.4"/>
+  <rect x="132" y="240" width="55" height="6" rx="3" fill="#f59e0b" opacity="0.4"/>
+  <rect x="195" y="240" width="40" height="6" rx="3" fill="#94a3b8" opacity="0.3"/>
+  
+  <!-- Bar Chart Card (floating right) -->
+  <g filter="url(#shadow1)">
+    <rect x="340" y="160" width="120" height="100" rx="10" fill="white">
+      <animate attributeName="y" values="160;152;160" dur="4s" repeatCount="indefinite"/>
+    </rect>
+    <text x="355" y="183" font-family="Arial, sans-serif" font-size="9" fill="#64748b" font-weight="600">ANALYTICS</text>
+    <!-- Bars -->
+    <rect x="358" y="225" width="16" height="25" rx="3" fill="url(#card-grad)" opacity="0.7">
+      <animate attributeName="y" values="225;220;225" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="height" values="25;30;25" dur="4s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="380" y="210" width="16" height="40" rx="3" fill="url(#card-grad)" opacity="0.85">
+      <animate attributeName="y" values="210;205;210" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="height" values="40;45;40" dur="4s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="402" y="200" width="16" height="50" rx="3" fill="url(#card-grad)">
+      <animate attributeName="y" values="200;195;200" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="height" values="50;55;50" dur="4s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="424" y="215" width="16" height="35" rx="3" fill="url(#card-grad)" opacity="0.6">
+      <animate attributeName="y" values="215;210;215" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="height" values="35;40;35" dur="4s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Pie Chart Card (floating left) -->
+  <g filter="url(#shadow1)">
+    <rect x="40" y="180" width="100" height="100" rx="10" fill="white">
+      <animate attributeName="y" values="180;174;180" dur="5s" repeatCount="indefinite"/>
+    </rect>
+    <circle cx="90" cy="225" r="28" fill="none" stroke="#e2e8f0" stroke-width="10">
+      <animate attributeName="cy" values="225;219;225" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="90" cy="225" r="28" fill="none" stroke="url(#card-grad)" stroke-width="10" 
+            stroke-dasharray="110 176" stroke-dashoffset="0" transform="rotate(-90 90 225)">
+      <animate attributeName="cy" values="225;219;225" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="90" cy="225" r="28" fill="none" stroke="url(#accent-grad)" stroke-width="10" 
+            stroke-dasharray="44 176" stroke-dashoffset="-110" transform="rotate(-90 90 225)">
+      <animate attributeName="cy" values="225;219;225" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <text x="55" y="199" font-family="Arial, sans-serif" font-size="8" fill="#64748b" font-weight="600">
+      <animate attributeName="y" values="199;193;199" dur="5s" repeatCount="indefinite"/>
+      DATA
+    </text>
+    <text x="55" y="268" font-family="Arial, sans-serif" font-size="11" fill="#1e293b" font-weight="700">
+      <animate attributeName="y" values="268;262;268" dur="5s" repeatCount="indefinite"/>
+      62%
+    </text>
+  </g>
+
+  <!-- Success Badge (floating top-right) -->
+  <g filter="url(#shadow1)">
+    <rect x="330" y="55" width="110" height="45" rx="22" fill="white">
+      <animate attributeName="y" values="55;48;55" dur="3.5s" repeatCount="indefinite"/>
+    </rect>
+    <circle cx="355" cy="77" r="14" fill="url(#green-grad)">
+      <animate attributeName="cy" values="77;70;77" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+    <path d="M349 77 l4 4 l8 -8" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <animate attributeName="d" values="M349 77 l4 4 l8 -8;M349 70 l4 4 l8 -8;M349 77 l4 4 l8 -8" dur="3.5s" repeatCount="indefinite"/>
+    </path>
+    <text x="375" y="74" font-family="Arial, sans-serif" font-size="8" fill="#64748b">
+      <animate attributeName="y" values="74;67;74" dur="3.5s" repeatCount="indefinite"/>
+      Certified
+    </text>
+    <text x="375" y="86" font-family="Arial, sans-serif" font-size="9" fill="#22c55e" font-weight="700">
+      <animate attributeName="y" values="86;79;86" dur="3.5s" repeatCount="indefinite"/>
+      PL-300 ✓
+    </text>
+  </g>
+
+  <!-- Brain/AI Node (floating bottom-left) -->
+  <g filter="url(#shadow1)">
+    <rect x="60" y="320" width="100" height="50" rx="10" fill="white">
+      <animate attributeName="y" values="320;314;320" dur="4.2s" repeatCount="indefinite"/>
+    </rect>
+    <circle cx="85" cy="345" r="12" fill="url(#accent-grad)" opacity="0.15">
+      <animate attributeName="cy" values="345;339;345" dur="4.2s" repeatCount="indefinite"/>
+    </circle>
+    <!-- AI / Brain icon -->
+    <text x="79" y="349" font-size="14">
+      <animate attributeName="y" values="349;343;349" dur="4.2s" repeatCount="indefinite"/>
+      🧠
+    </text>
+    <text x="102" y="341" font-family="Arial, sans-serif" font-size="8" fill="#64748b">
+      <animate attributeName="y" values="341;335;341" dur="4.2s" repeatCount="indefinite"/>
+      AI &amp; ML
+    </text>
+    <text x="102" y="354" font-family="Arial, sans-serif" font-size="9" fill="#7c3aed" font-weight="700">
+      <animate attributeName="y" values="354;348;354" dur="4.2s" repeatCount="indefinite"/>
+      Learning
+    </text>
+  </g>
+
+  <!-- Trend Line Card (floating bottom-right) -->
+  <g filter="url(#shadow1)">
+    <rect x="340" y="310" width="120" height="65" rx="10" fill="white">
+      <animate attributeName="y" values="310;304;310" dur="3.8s" repeatCount="indefinite"/>
+    </rect>
+    <text x="355" y="332" font-family="Arial, sans-serif" font-size="8" fill="#64748b" font-weight="600">
+      <animate attributeName="y" values="332;326;332" dur="3.8s" repeatCount="indefinite"/>
+      GROWTH
+    </text>
+    <text x="355" y="347" font-family="Arial, sans-serif" font-size="16" fill="#1e293b" font-weight="700">
+      <animate attributeName="y" values="347;341;347" dur="3.8s" repeatCount="indefinite"/>
+      +127%
+    </text>
+    <!-- Trend line -->
+    <polyline points="355,365 370,362 385,358 400,355 415,348 430,342 445,335" 
+              fill="none" stroke="url(#green-grad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <animate attributeName="points" 
+               values="355,365 370,362 385,358 400,355 415,348 430,342 445,335;355,359 370,356 385,352 400,349 415,342 430,336 445,329;355,365 370,362 385,358 400,355 415,348 430,342 445,335" 
+               dur="3.8s" repeatCount="indefinite"/>
+    </polyline>
+  </g>
+
+  <!-- Decorative Plus Signs -->
+  <text x="170" y="80" font-family="Arial, sans-serif" font-size="16" fill="#2563eb" opacity="0.15" font-weight="300">+</text>
+  <text x="410" y="430" font-family="Arial, sans-serif" font-size="14" fill="#7c3aed" opacity="0.15" font-weight="300">+</text>
+  <text x="70" y="440" font-family="Arial, sans-serif" font-size="18" fill="#22c55e" opacity="0.12" font-weight="300">+</text>
+
+  <!-- Decorative ring -->
+  <circle cx="430" cy="450" r="20" fill="none" stroke="#2563eb" stroke-opacity="0.08" stroke-width="2"/>
+  <circle cx="65" cy="80" r="15" fill="none" stroke="#7c3aed" stroke-opacity="0.08" stroke-width="2"/>
+</svg>

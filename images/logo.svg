@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50" fill="none">
+  <defs>
+    <linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb"/>
+      <stop offset="100%" style="stop-color:#1d4ed8"/>
+    </linearGradient>
+  </defs>
+  <!-- Icon -->
+  <rect x="2" y="8" width="34" height="34" rx="8" fill="url(#logo-grad)"/>
+  <!-- Code brackets -->
+  <text x="8" y="32" font-family="monospace" font-size="18" fill="white" font-weight="700">&lt;/&gt;</text>
+  <!-- Text -->
+  <text x="44" y="24" font-family="Arial, sans-serif" font-size="14" fill="#1e293b" font-weight="800">Learn With</text>
+  <text x="44" y="42" font-family="Arial, sans-serif" font-size="14" fill="#2563eb" font-weight="800">Abinash</text>
+</svg>

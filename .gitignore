@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# Python scripts (dev only)
+*.py
+__pycache__/
+
+# IDE
+.vscode/
+.idea/
+
+# Misc
+*.log

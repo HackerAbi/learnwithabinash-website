@@ -1,0 +1,182 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 600" fill="none">
+  <defs>
+    <linearGradient id="bg-circle" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:0.06"/>
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:0.06"/>
+    </linearGradient>
+    <linearGradient id="skin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4a574"/>
+      <stop offset="100%" style="stop-color:#c49466"/>
+    </linearGradient>
+    <linearGradient id="shirt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb"/>
+      <stop offset="100%" style="stop-color:#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="hair" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <clipPath id="circle-clip">
+      <circle cx="250" cy="270" r="200"/>
+    </clipPath>
+    <filter id="soft-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#2563eb" flood-opacity="0.12"/>
+    </filter>
+    <filter id="card-shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Background Decorative -->
+  <circle cx="250" cy="270" r="220" fill="url(#bg-circle)"/>
+  <circle cx="250" cy="270" r="200" fill="none" stroke="#2563eb" stroke-opacity="0.06" stroke-width="1" stroke-dasharray="6 8"/>
+
+  <!-- Decorative dots -->
+  <circle cx="80" cy="150" r="4" fill="#2563eb" opacity="0.15">
+    <animate attributeName="cy" values="150;142;150" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="420" cy="130" r="5" fill="#7c3aed" opacity="0.12">
+    <animate attributeName="cy" values="130;122;130" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="400" cy="430" r="3" fill="#22c55e" opacity="0.2">
+    <animate attributeName="cy" values="430;424;430" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Main Profile Circle -->
+  <g filter="url(#soft-shadow)">
+    <circle cx="250" cy="270" r="180" fill="#f8fafc"/>
+  </g>
+
+  <!-- Person Illustration -->
+  <g clip-path="url(#circle-clip)">
+    <!-- Body / Shirt -->
+    <path d="M150,450 Q150,380 200,360 L250,345 L300,360 Q350,380 350,450 L350,520 L150,520 Z" fill="url(#shirt)"/>
+    <!-- Collar line -->
+    <path d="M220,360 L250,380 L280,360" fill="none" stroke="#1d4ed8" stroke-width="2"/>
+
+    <!-- Neck -->
+    <rect x="230" y="300" width="40" height="50" rx="8" fill="url(#skin)"/>
+
+    <!-- Head -->
+    <ellipse cx="250" cy="260" rx="70" ry="80" fill="url(#skin)"/>
+
+    <!-- Hair -->
+    <path d="M180,240 Q180,175 250,170 Q320,175 320,240 L320,220 Q320,165 250,158 Q180,165 180,220 Z" fill="url(#hair)"/>
+    <!-- Hair sides -->
+    <path d="M180,220 Q175,250 180,260" fill="none" stroke="url(#hair)" stroke-width="8" stroke-linecap="round"/>
+    <path d="M320,220 Q325,250 320,260" fill="none" stroke="url(#hair)" stroke-width="8" stroke-linecap="round"/>
+
+    <!-- Eyebrows -->
+    <path d="M215,235 Q225,230 235,235" fill="none" stroke="#1a1a2e" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M265,235 Q275,230 285,235" fill="none" stroke="#1a1a2e" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Eyes -->
+    <ellipse cx="225" cy="250" rx="8" ry="7" fill="white"/>
+    <ellipse cx="275" cy="250" rx="8" ry="7" fill="white"/>
+    <circle cx="226" cy="250" r="4" fill="#1a1a2e"/>
+    <circle cx="276" cy="250" r="4" fill="#1a1a2e"/>
+    <circle cx="228" cy="248" r="1.5" fill="white"/>
+    <circle cx="278" cy="248" r="1.5" fill="white"/>
+
+    <!-- Nose -->
+    <path d="M248,260 Q250,270 252,260" fill="none" stroke="#b8956a" stroke-width="1.5" stroke-linecap="round"/>
+
+    <!-- Smile -->
+    <path d="M230,282 Q250,298 270,282" fill="none" stroke="#a0845c" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Glasses -->
+    <rect x="205" y="240" width="40" height="26" rx="6" fill="none" stroke="#334155" stroke-width="2.5"/>
+    <rect x="255" y="240" width="40" height="26" rx="6" fill="none" stroke="#334155" stroke-width="2.5"/>
+    <line x1="245" y1="253" x2="255" y2="253" stroke="#334155" stroke-width="2"/>
+    <line x1="205" y1="253" x2="195" y2="250" stroke="#334155" stroke-width="2"/>
+    <line x1="295" y1="253" x2="305" y2="250" stroke="#334155" stroke-width="2"/>
+
+    <!-- Ears -->
+    <ellipse cx="178" cy="258" rx="10" ry="14" fill="url(#skin)"/>
+    <ellipse cx="322" cy="258" rx="10" ry="14" fill="url(#skin)"/>
+  </g>
+
+  <!-- Skills Badge (floating right) -->
+  <g filter="url(#card-shadow)">
+    <rect x="370" y="200" width="110" height="90" rx="12" fill="white">
+      <animate attributeName="y" values="200;193;200" dur="4s" repeatCount="indefinite"/>
+    </rect>
+    <text x="385" y="223" font-family="Arial, sans-serif" font-size="8" fill="#64748b" font-weight="600">
+      <animate attributeName="y" values="223;216;223" dur="4s" repeatCount="indefinite"/>
+      EXPERTISE
+    </text>
+    <!-- Skill bars -->
+    <rect x="385" y="232" width="80" height="6" rx="3" fill="#e2e8f0">
+      <animate attributeName="y" values="232;225;232" dur="4s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="385" y="232" width="72" height="6" rx="3" fill="#2563eb">
+      <animate attributeName="y" values="232;225;232" dur="4s" repeatCount="indefinite"/>
+    </rect>
+    <text x="385" y="230" font-family="Arial, sans-serif" font-size="6" fill="#94a3b8">
+      <animate attributeName="y" values="230;223;230" dur="4s" repeatCount="indefinite"/>
+      Power BI
+    </text>
+
+    <rect x="385" y="250" width="80" height="6" rx="3" fill="#e2e8f0">
+      <animate attributeName="y" values="250;243;250" dur="4s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="385" y="250" width="68" height="6" rx="3" fill="#7c3aed">
+      <animate attributeName="y" values="250;243;250" dur="4s" repeatCount="indefinite"/>
+    </rect>
+    <text x="385" y="248" font-family="Arial, sans-serif" font-size="6" fill="#94a3b8">
+      <animate attributeName="y" values="248;241;248" dur="4s" repeatCount="indefinite"/>
+      Python
+    </text>
+
+    <rect x="385" y="268" width="80" height="6" rx="3" fill="#e2e8f0">
+      <animate attributeName="y" values="268;261;268" dur="4s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="385" y="268" width="64" height="6" rx="3" fill="#22c55e">
+      <animate attributeName="y" values="268;261;268" dur="4s" repeatCount="indefinite"/>
+    </rect>
+    <text x="385" y="266" font-family="Arial, sans-serif" font-size="6" fill="#94a3b8">
+      <animate attributeName="y" values="266;259;266" dur="4s" repeatCount="indefinite"/>
+      SQL
+    </text>
+  </g>
+
+  <!-- Experience Badge (floating left) -->
+  <g filter="url(#card-shadow)">
+    <rect x="20" y="240" width="100" height="55" rx="12" fill="white">
+      <animate attributeName="y" values="240;234;240" dur="3.5s" repeatCount="indefinite"/>
+    </rect>
+    <text x="40" y="262" font-family="Arial, sans-serif" font-size="22" fill="#2563eb" font-weight="800">
+      <animate attributeName="y" values="262;256;262" dur="3.5s" repeatCount="indefinite"/>
+      10+
+    </text>
+    <text x="40" y="280" font-family="Arial, sans-serif" font-size="9" fill="#64748b" font-weight="500">
+      <animate attributeName="y" values="280;274;280" dur="3.5s" repeatCount="indefinite"/>
+      Years Exp.
+    </text>
+  </g>
+
+  <!-- Students Badge (floating bottom) -->
+  <g filter="url(#card-shadow)">
+    <rect x="310" y="400" width="120" height="50" rx="12" fill="white">
+      <animate attributeName="y" values="400;394;400" dur="4.5s" repeatCount="indefinite"/>
+    </rect>
+    <text x="325" y="423" font-family="Arial, sans-serif" font-size="8" fill="#64748b">
+      <animate attributeName="y" values="423;417;423" dur="4.5s" repeatCount="indefinite"/>
+      Students Trained
+    </text>
+    <text x="325" y="440" font-family="Arial, sans-serif" font-size="16" fill="#1e293b" font-weight="700">
+      <animate attributeName="y" values="440;434;440" dur="4.5s" repeatCount="indefinite"/>
+      500+
+    </text>
+    <text x="375" y="440" font-family="Arial, sans-serif" font-size="12" fill="#22c55e" font-weight="600">
+      <animate attributeName="y" values="440;434;440" dur="4.5s" repeatCount="indefinite"/>
+      ▲ 
+    </text>
+  </g>
+
+  <!-- Decorative elements -->
+  <circle cx="440" cy="540" r="18" fill="none" stroke="#2563eb" stroke-opacity="0.06" stroke-width="2"/>
+  <circle cx="50" cy="420" r="12" fill="none" stroke="#7c3aed" stroke-opacity="0.08" stroke-width="2"/>
+  <text x="100" y="140" font-family="Arial, sans-serif" font-size="14" fill="#2563eb" opacity="0.1">+</text>
+  <text x="380" y="520" font-family="Arial, sans-serif" font-size="16" fill="#7c3aed" opacity="0.1">+</text>
+</svg>
