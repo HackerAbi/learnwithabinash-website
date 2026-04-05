@@ -355,17 +355,11 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--gray-900);
 }
 
-.logo-icon {
+.logo-img {
   width: 40px;
   height: 40px;
-  background: var(--gradient-primary);
   border-radius: var(--radius-lg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 1.2rem;
-  font-weight: 900;
+  object-fit: contain;
 }
 
 .logo span {
